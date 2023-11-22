@@ -66,25 +66,7 @@ const AppRouter = (
           </>
         }
       />
-      {/* <Route
-        path="/cart"
-        element={
-          <Provider store={store}>
-            <Header />
-            <Cart />
-          </Provider>
-        }
-      />
-      <Route
-        path="/loc/*"
-        element={
-
-
-          <BasicModal />
-
-
-        }
-      /> */}
+     
 
     </Routes>
 
