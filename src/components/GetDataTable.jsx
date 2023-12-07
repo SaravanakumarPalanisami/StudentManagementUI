@@ -19,7 +19,7 @@ const DataTable = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/getstudentlist');
+                const response = await axios.get('https://adhesive-baseball-production.up.railway.app/getstudentlist');
                 console.log(response)
 
                 setData(response.data); 
