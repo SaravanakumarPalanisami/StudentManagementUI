@@ -14,7 +14,7 @@ const UpdateScoreForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.put(`http://localhost:8080/update/?name=${name}&score=${score}`);
+            const response = await axios.put(`https://adhesive-baseball-production.up.railway.app/?name=${name}&score=${score}`);
             setResultData(response.data);
             console.log(resultData)
             setStatus(response.data.success);
