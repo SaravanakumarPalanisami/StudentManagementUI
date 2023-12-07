@@ -37,7 +37,7 @@ const DeleteForm = () => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-        const result = await axios.delete(`http://localhost:8080/delete/?name=${formData.name}`);
+        const result = await axios.delete(`https://adhesive-baseball-production.up.railway.app/delete/?name=${formData.name}`);
         setresultData(result.data);
         setStatus(result.data.success);
 
