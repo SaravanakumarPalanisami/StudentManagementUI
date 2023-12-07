@@ -47,7 +47,7 @@ const StudentForm = () => {
     e.preventDefault();
     
     try{
-    const response = await axios.post('http://localhost:8080/insert', formData);
+    const response = await axios.post('https://adhesive-baseball-production.up.railway.app/insert', formData);
     setresultData(response.data)
 
     setStatus(response.data.success);
