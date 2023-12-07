@@ -13,7 +13,7 @@ const GetRankForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`http://localhost:8080/getrank/?name=${name}`);
+      const response = await axios.get(`https://adhesive-baseball-production.up.railway.app/?name=${name}`);
       setStatus(response.data.success);
       setResultData(response.data);
     } catch (error) {
